@@ -20,18 +20,18 @@ void setup() {
   Serial.println("Basic Servo test with Encoder: ");
   
   s1.attach(11, 500, 2500);
-  //s2.attach(10, 500, 2500);
-  //s3.attach(9, 500, 2500);
-  //s4.attach(6, 500, 2500);
+  s2.attach(10, 500, 2500);
+  s3.attach(9, 500, 2500);
+  s4.attach(6, 500, 2500);
   
   s1.write(90);
-  //s2.write(90);
-  //s3.write(90);
-  //s4.write(90);
+  s2.write(90);
+  s3.write(90);
+  s4.write(90);
 }
 
 void loop() {
-  /*
+
   long P1 = e1.read();
   if (P1 != P0) {
     pos = map(P1, -100, 100, 0, 180);
